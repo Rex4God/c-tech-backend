@@ -1,15 +1,15 @@
-# fly.toml app configuration file generated for c-tech-backend on 2025-06-27T15:40:13Z
+# fly.toml app configuration file generated for c-tech-backend-service on 2025-06-27T16:26:07Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'c-tech-backend'
-primary_region = 'jnb'
+app = 'c-tech-backend-service'
+primary_region = 'ams'
 
 [build]
 
 [http_service]
-  internal_port = 3000
+  internal_port = 8000
   force_https = true
   auto_stop_machines = 'stop'
   auto_start_machines = true
